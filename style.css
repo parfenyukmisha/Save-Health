@@ -66,17 +66,17 @@ body {
   
   .feature-kitten {
     padding-top: 60px;
-    background-image: url("img/bottle.svg");
+    background-image: url("img/free-icon-healthcare-6373012.png");
   }
   
   .feature-cat {
     padding-top: 60px;
-    background-image: url("img/cat.svg");
+    background-image: url("img/free-icon-stethoscope-1021592.png");
   }
   
   .feature-train {
     padding-top: 60px;
-    background-image: url("img/whistle.svg");
+    background-image: url("img/free-icon-doctor-2799390 (1).png");
   }
   
   .skills-list {
@@ -88,4 +88,40 @@ body {
     display: flex;
     justify-content: space-between;
     color: #999999;
+  }
+
+  .wishes{
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  button{
+    background: rgba(0, 8, 255, 0.638);
+    color: black;
+    border: 5px solid;
+    border-radius: 100px;
+    height: 50px;
+    width: 500px;
+    cursor: pointer;
+  }
+
+  #p-love-wishes {
+    font-size: 150px;
+    line-height: 28px;
+    line-height: 40px;
+    color: rgba(0, 8, 255, 0.641);
+    text-align: justify;
+  }
+
+
+
+
+  /*Блок з купівлею та відбраженням */
+
+  .site-footer p {
+    border:1px solid rgb(0, 8, 255)  ;
+    padding: 10px 20px;
+    border-radius: 10px 8px;
+    background-color: rgb(0, 8, 255);
+    cursor: pointer;
   }
