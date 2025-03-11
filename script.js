@@ -43,3 +43,26 @@ function getRandomInt(max) {
       document.getElementById("btn_health_wishes").style.display = "inline-block";
     });
     
+    let galleryImage = 1
+
+    document.getElementById("main-image").setAttribute("src",`img/gallery/${galleryImage}.jpg`)
+      
+      document.getElementById("right-arrow").addEventListener('click', ()=>{
+        galleryImage++
+        console.log(galleryImage)
+      
+        if(galleryImage == 4)
+           {galleryImage = 1}
+
+        document.getElementById("main-image").setAttribute("src",`img/gallery/${galleryImage}.jpg`)
+      })
+
+      document.getElementById("left-arrow").addEventListener('click', ()=>{
+        galleryImage++
+        console.log(galleryImage)
+      
+        if(galleryImage == 4)
+           {galleryImage = 1}
+
+        document.getElementById("main-image").setAttribute("src",`img/gallery/${galleryImage}.jpg`)
+      })
