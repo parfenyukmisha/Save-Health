@@ -97,17 +97,35 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    justify-content: space-around;
   }
 
   #main-image{
     width: 300px;
+    height: 200px;
+  }
+
+  #main-image{
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.5);
   }
 
   #left-arrow, #right-arrow{
+    background-color: rgba(0, 239, 247, 0.808);
     width: 64px;
     height: 64px;
     cursor: pointer;
+    transition: box-shadow 0.1s ease;
+    border-radius: 50%;
   }
+
+  #left-arrow:hover, #right-arrow:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#left-arrow:active, #right-arrow:active {
+  box-shadow: 5px 5px 10px rgba(0, 153, 255, 0.6);
+}
 
   .wishes{
     margin-top: 30px;

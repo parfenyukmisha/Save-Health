@@ -14,6 +14,12 @@ function getRandomInt(max) {
     document.getElementById("p-health-wishes").innerHTML = arrayOfhealthWishes[getRandomInt(4)];
     });
 
+    const arrayOfImages = [
+      "1.jpg",
+      "2.jpg",
+      "3.jpg"
+    ]
+
     let countOfpills = 5;
     document.getElementById("count-of-tablets").innerText = "💊".repeat(
       countOfpills
@@ -45,7 +51,7 @@ function getRandomInt(max) {
     
     let galleryImage = 1
 
-    document.getElementById("main-image").setAttribute("src",`img/gallery/${galleryImage}.jpg`)
+    document.getElementById("main-image").setAttribute("src",`img/gallery/${arrayOfImages[galleryImage-1]}`)
       
       document.getElementById("right-arrow").addEventListener('click', ()=>{
         galleryImage++
@@ -54,7 +60,7 @@ function getRandomInt(max) {
         if(galleryImage == 4)
            {galleryImage = 1}
 
-        document.getElementById("main-image").setAttribute("src",`img/gallery/${galleryImage}.jpg`)
+        document.getElementById("main-image").setAttribute("src",`img/gallery/${arrayOfImages[galleryImage-1]}`)
       })
 
       document.getElementById("left-arrow").addEventListener('click', ()=>{
@@ -64,5 +70,5 @@ function getRandomInt(max) {
         if(galleryImage == 4)
            {galleryImage = 1}
 
-        document.getElementById("main-image").setAttribute("src",`img/gallery/${galleryImage}.jpg`)
+        document.getElementById("main-image").setAttribute("src",`img/gallery/${arrayOfImages[galleryImage-1]}`)
       })
