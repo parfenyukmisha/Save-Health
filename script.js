@@ -72,3 +72,67 @@ function getRandomInt(max) {
 
         document.getElementById("main-image").setAttribute("src",`img/gallery/${arrayOfImages[galleryImage-1]}`)
       })
+
+      const arrayOfObjects = [
+        {
+          id:1,
+          title:"Аевіт",
+          photo:"",
+          description:"",
+          rating:4,
+          type:""
+        },
+        {
+          id:1,
+          title:"Вітімін С",
+          photo:"",
+          description:"",
+          rating:4,
+          type:""
+        },
+        {
+          id:1,
+          title:"Вітамін D",
+          photo:"",
+          description:"",
+          rating:4,
+          type:""
+        },
+        {
+          id:1,
+          title:"Вітамін B3",
+          photo:"",
+          description:"",
+          rating:4,
+          type:""
+        },
+        {
+          id:1,
+          title:"Омега-3",
+          photo:"",
+          description:"",
+          rating:4,
+          type:""
+        },
+        {
+          id:1,
+          title:"Magneum",
+          photo:"",
+          description:"",
+          rating:5,
+          type:""
+        }
+      ]
+
+      console.log(arrayOfObjects)
+
+      arrayOfObjects.forEach((item) =>{
+        console.log(item)
+
+        let divVitamin = document.createElement('div')
+        divVitamin.innerText = item.title
+        divVitamin.classList.add('vitamin')
+
+        document.getElementById("p-vitamins").appendChild(divVitamin)
+      })
+
