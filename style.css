@@ -51,7 +51,7 @@ body {
   }
   
   .features {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   
   .features p {
@@ -65,17 +65,17 @@ body {
   }
   
   .feature-kitten {
-    padding-top: 60px;
+    padding-top: 70px;
     background-image: url("img/free-icon-healthcare-6373012.png");
   }
   
   .feature-cat {
-    padding-top: 60px;
+    padding-top: 70px;
     background-image: url("img/free-icon-stethoscope-1021592.png");
   }
   
   .feature-train {
-    padding-top: 60px;
+    padding-top: 70px;
     background-image: url("img/free-icon-doctor-2799390 (1).png");
   }
   
